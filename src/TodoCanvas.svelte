@@ -15,7 +15,7 @@
     function addTodo(event:Event){
 		
         let todoInput:HTMLInputElement = event.target; //object's reference that is emiting event
-		if(event.key ==='Enter' && todoInput.value !== '' ) {
+		if(event.key ===13  || event.key ==='Enter' && todoInput.value !== '' ) {
 		todoItems=[...todoItems, {
                                 id:todoItems.length+1,
                                 name:todoInput.value,
